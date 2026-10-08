@@ -86,7 +86,7 @@ ${log.map((l) => `- ${ts(l.t)} — ${l.text}`).join("\n")}
 - **Total: ${score.total}/1000**
 
 ## Action items
-- [ ] Add alert/test covering: ${s.rootCause.split(".")[0].toLowerCase()}
+- [ ] Add alert/test covering: ${(s.rootCause.split(".")[0] ?? "").toLowerCase()}
 - [ ] Update runbook for ${s.service}
 - [ ] Blameless review scheduled
 `;
