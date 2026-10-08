@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+- Game state & scenarios live in src/lib (scenarios.ts data, game.ts pure scoring) so rules are unit-testable.
+- backend/ (Go) and infra/terraform are reference deployables; the playable app is self-contained.
